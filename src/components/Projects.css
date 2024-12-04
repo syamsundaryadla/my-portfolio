@@ -1,0 +1,135 @@
+.projects {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #1c1b38;
+  border-radius: 20px;
+  color: #fff;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #f76d43;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project {
+  background-color: #2f2f4f;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  min-width: 280px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(100px); /* Start with cards hidden and below */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project.slide-up {
+  opacity: 1;
+  transform: translateY(0); /* Slide up into place */
+}
+
+.project.slide-down {
+  opacity: 1;
+  transform: translateY(0); /* Slide down into place */
+}
+
+.project:hover,
+.project:active {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #f76d43;
+}
+
+.project p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.icon-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-container i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.icon-container:hover,
+.icon-container:active {
+  background-color: #444;
+}
+
+.orange {
+  background-color: #ff7f50;
+}
+
+.purple {
+  background-color: #6a4fff;
+}
+
+.blue {
+  background-color: #00bcd4;
+}
+
+/* Mobile-Friendly Adjustments */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    justify-content: center;
+  }
+
+  .project {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project h3 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project:active {
+    transform: translateY(-5px);
+  }
+}

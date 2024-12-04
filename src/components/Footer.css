@@ -1,0 +1,169 @@
+/* Footer Section */
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Footer Section Styling */
+.footer-section {
+  flex: 1 1 calc(50% - 20px); /* Adjust for 2-column layout */
+  min-width: 250px;          /* Prevent collapsing */
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #f76d43;
+  font-size: 1.2rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Contact Me Button */
+.contact-btn {
+  background-color: #f76d43;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #e66430;
+}
+
+/* Contact Chat Box */
+.contact-chat {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-chat p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.contact-chat input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #222;
+  color: white;
+}
+
+.contact-chat input:focus {
+  outline: none;
+  border-color: #f76d43;
+}
+
+/* Error Message */
+.error-message {
+  color: #f76d43;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Submitted Message */
+.submitted-message {
+  background-color: #f6f6f6;
+  padding: 15px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.submitted-message p {
+  margin: 0;
+}
+
+.submitted-message strong {
+  color: #f76d43;
+}
+
+/* Scroll-Up Button */
+.scroll-up {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.scroll-up-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-up-btn:hover {
+  background-color: #f76d43;
+  transform: translateY(-5px);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    flex: 1 1 100%; /* Full width for small screens */
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -22,7 +22,7 @@ const AboutMe = () => {
             <h4>Data Science 📊</h4>
           </div>
           <div className={`achievement-card card-2 ${inView ? "bubble" : ""}`}>
-            <h4>Artificial Intelligence 🤖</h4>
+            <h5>Artificial Intelligence 🤖</h5>
           </div>
           <div className={`achievement-card card-3 ${inView ? "bubble" : ""}`}>
             <h4>Machine Learning 🧠</h4>

@@ -47,17 +47,17 @@
 /* Card Positions */
 .card-1 {
   top: -80px;
-  left: -120px;
+  left: -150px; /* Adjusted to move left */
 }
 
 .card-2 {
   bottom: -90px;
-  left: -20px;
+  left: -20px; /* Positioned centered below the main image */
 }
 
 .card-3 {
   top: 20px;
-  right: -100px;
+  right: -150px; /* Adjusted to move right */
 }
 
 /* Bubble Floating Animation */
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .social-media-links a {
@@ -124,7 +124,7 @@
 
   .card-1 {
     top: -60px;
-    left: -90px;
+    left: -110px; /* Adjusted for smaller screens */
   }
 
   .card-2 {
@@ -134,12 +134,12 @@
 
   .card-3 {
     top: 30px;
-    right: -80px;
+    right: -120px; /* Adjusted for smaller screens */
   }
 
   .social-media-links {
     gap: 1.2rem;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
   }
 
   .social-media-links a {
@@ -151,86 +151,78 @@
 
 /* For small screens (mobile phones) */
 @media (max-width: 768px) {
-  .about-me {
-    padding: 2rem 1rem;
-  }
-
   .main-image {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
 
   .achievement-card {
-    font-size: 0.85rem;
-    padding: 0.8rem;
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
   }
 
   .card-1 {
-    top: -40px;
-    left: -50px;
+    top: -50px;
+    left: -90px; /* Adjusted for mobile view */
   }
 
   .card-2 {
-    bottom: -20px;
-    left: -10px;
+    bottom: -40px;
+    left: 0;
   }
 
   .card-3 {
-    top: 10px;
-    right: -50px;
+    top: 20px;
+    right: -100px; /* Adjusted for mobile view */
   }
 
   .social-media-links {
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 4rem;
   }
 
   .social-media-links a {
-    width: 38px;
-    height: 38px;
-    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }
 
 /* For extra-small screens (very small mobile devices) */
 @media (max-width: 480px) {
-  .about-me {
-    padding: 1.5rem 1rem;
-  }
-
   .main-image {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 
   .achievement-card {
-    font-size: 0.75rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
   }
 
   .card-1 {
-    top: -20px;
-    left: -30px;
+    top: -30px;
+    left: -70px; /* Adjusted for very small devices */
   }
 
   .card-2 {
-    bottom: -10px;
-    left: 0px;
+    bottom: -20px;
+    left: 10px;
   }
 
   .card-3 {
-    top: 5px;
-    right: -30px;
+    top: 10px;
+    right: -70px; /* Adjusted for very small devices */
   }
 
   .social-media-links {
-    gap: 0.6rem;
+    gap: 0.8rem;
+    margin-top: 2rem;
   }
 
   .social-media-links a {
-    width: 30px;
-    height: 30px;
-    font-size: 0.9rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
 }
